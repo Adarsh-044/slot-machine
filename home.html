@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlotMachine</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+</head>
+
+<body>
+    <H1 id="playTheGame">Slot Machine</H1>
+
+    <div class="machine">
+        <div class="slot" id="slot1">
+            <div class="value" id="value1">1</div>
+        </div>
+
+        <div class="slot" id="slot2">
+            <div class="value" id="value2">1</div>
+        </div>
+
+        <div class="slot" id="slot3">
+            <div class="value" id="value3">1</div>
+        </div>
+    </div>
+
+    <div id="changes">
+        <input class="final" id="inpSpeed" type="number" min="1" max="9" placeholder="Speed">
+        <button class="final" id="begin">Start</button>
+        <button class="final" id="stopIt">Stop</button>
+    </div>
+
+    <div class="result">
+        <span id = "res"></span>
+    </div>
+</body>
+
+</html>

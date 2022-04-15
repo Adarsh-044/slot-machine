@@ -1,0 +1,80 @@
+body {
+    background-color: skyblue;
+}
+
+:root {
+    --speed: 5;
+}
+
+#playTheGame {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.machine {
+    background-color: tomato;
+    height: 220px;
+    width: 633px;
+    margin: auto;
+    padding: 31px;
+    display: flex;
+    border: dashed 2px rgb(225, 255, 29);
+}
+
+.slot {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(14, 26, 241);
+    margin: 3px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.movable {
+    animation: slotspin infinite ease-in calc(1s / var(--speed));
+}
+
+
+@keyframes slotspin {
+    0% {
+        transform: translateY(-250px);
+    }
+    100% {
+        transform: translateY(250px);
+    }
+}
+
+#changes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 31px 110px;
+    align-items: center;
+}
+
+.final {
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    width: 86px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.result{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-size: 43px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
